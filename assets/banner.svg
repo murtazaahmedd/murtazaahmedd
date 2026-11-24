@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1E33"/>
+      <stop offset="1" stop-color="#1F3A5F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.45" r="0.45">
+      <stop offset="0" stop-color="#4FA3FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#4FA3FF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .t{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#FFFFFF}
+      .s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;fill:#A9C7E8}
+      .edge{stroke:#6FB4FF;stroke-opacity:.45;stroke-width:1.5}
+      .node{fill:#6FB4FF}
+      .pulse{animation:p 3s ease-in-out infinite}
+      .pulse2{animation:p 3s ease-in-out 1s infinite}
+      .pulse3{animation:p 3s ease-in-out 2s infinite}
+      @keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+    </style>
+  </defs>
+  <rect width="1200" height="260" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="260" rx="18" fill="url(#glow)"/>
+  <!-- knowledge graph motif -->
+  <g>
+    <line class="edge" x1="860" y1="70" x2="960" y2="120"/>
+    <line class="edge" x1="960" y1="120" x2="1080" y2="80"/>
+    <line class="edge" x1="960" y1="120" x2="1010" y2="200"/>
+    <line class="edge" x1="860" y1="70" x2="880" y2="180"/>
+    <line class="edge" x1="880" y1="180" x2="1010" y2="200"/>
+    <line class="edge" x1="1080" y1="80" x2="1130" y2="170"/>
+    <line class="edge" x1="1010" y1="200" x2="1130" y2="170"/>
+    <line class="edge" x1="780" y1="140" x2="860" y2="70"/>
+    <line class="edge" x1="780" y1="140" x2="880" y2="180"/>
+    <circle class="node pulse" cx="960" cy="120" r="11"/>
+    <circle class="node pulse2" cx="860" cy="70" r="7"/>
+    <circle class="node pulse3" cx="1080" cy="80" r="8"/>
+    <circle class="node pulse2" cx="1010" cy="200" r="7"/>
+    <circle class="node pulse" cx="880" cy="180" r="6"/>
+    <circle class="node pulse3" cx="1130" cy="170" r="6"/>
+    <circle class="node pulse" cx="780" cy="140" r="5"/>
+  </g>
+  <text class="t" x="60" y="112" font-size="52" font-weight="700">Murtaza Ahmed</text>
+  <text class="s" x="62" y="158" font-size="24" font-weight="600">AI &amp; Data Engineer</text>
+  <text class="s" x="62" y="194" font-size="18">Knowledge Graphs · Agent Memory · Cloud Data Warehousing</text>
+</svg>
