@@ -45,11 +45,13 @@ memory for LLM agents.
 
 ### 🚀 Projects
 
-#### 🤖 AI agents & LLM systems
+#### 🤖 AI agents, LLM systems & knowledge graphs
 
 | Project | What it is | Stack |
 |---|---|---|
 | 📊 [**TrueMetric**](https://github.com/murtazaahmedd/analytics-agent) | AI data agent that answers business questions only through an approved metric layer, checks the data first and refuses rather than guesses. 0 confidently wrong answers across a 121-question eval. | Python agent state machine, dbt, MetricFlow, DuckDB, MCP, LiteLLM |
+| 🕸️ [**GraphRAG on a Knowledge Graph**](https://github.com/murtazaahmedd/graphrag-knowledge-graph) | Documents become a knowledge graph; questions are answered by multi-hop traversal with an evidence path per answer, impact analysis with PageRank, hybrid BM25 + vector retrieval and abstention. 20/20 on its eval. | Python, DuckDB, NetworkX, scikit-learn |
+| 🧠 [**Agent Memory Service**](https://github.com/murtazaahmedd/agent-memory-service) | Self-improving episodic memory for agents: novelty-gated writes, Bayesian usefulness, crystallization and decay. Lifts first-try task success from 0% to 90% in its benchmark. | LangGraph, FastAPI, SQLite, NumPy |
 | 📞 [**Voice AI Patient Registration**](https://github.com/murtazaahmedd/calling-agent) | Phone agent that registers or updates patients by voice, backed by a validated REST API. | Vapi, FastAPI, PostgreSQL, Render |
 
 #### 🧪 Machine learning & computer vision
@@ -65,6 +67,8 @@ memory for LLM agents.
 
 | Project | What it is | Stack |
 |---|---|---|
+| ☁️ [**GCP ELT + dbt Warehouse**](https://github.com/murtazaahmedd/gcp-elt-dbt-warehouse) | Batch ELT on Google Cloud: Parquet landing zone in Cloud Storage, incremental idempotent loads into BigQuery, dbt star schema with SCD2 history and data tests, deployed as a Cloud Run Job. | GCS, BigQuery, dbt, Cloud Run, DuckDB |
+| 🔄 [**CDC Streaming Warehouse**](https://github.com/murtazaahmedd/cdc-streaming-warehouse) | Change data capture from Postgres via Debezium and Kafka into an effectively-once SCD2 warehouse that survives crashes, replays and schema changes. | Debezium, Redpanda (Kafka), Postgres, DuckDB |
 | 🚦 [**Karachi Surge**](https://github.com/murtazaahmedd/karachi-surge) | Real-time streaming engine for Karachi traffic and ride prices, with live pollers and NYC trip replay. | Redpanda (Kafka), TimescaleDB, Redis, H3, Docker |
 | 🏏 [**IPL Match Analytics**](https://github.com/murtazaahmedd/ipldataanalysis-end-to-end-data-engineering-project) | Ball-by-ball IPL data pipeline: extraction, cleaning and transformations in Spark, then analysis of team and player performance. | Apache Spark, PySpark, Spark SQL |
 | 🏆 [**T20 World Cup Analytics**](https://github.com/murtazaahmedd/t20_worldcup_analysis) | Cleans raw match and player JSON into a star schema (match, player, batting and bowling tables) and builds a Power BI dashboard of batting and bowling performance. | Python, pandas, Power BI |
